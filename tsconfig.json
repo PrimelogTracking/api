@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es6"
+    ],
+    "target": "es2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@controllers/*": [
+        "controllers/*"
+      ],
+      "@entities/*": [
+        "entities/*"
+      ],
+      "@database/*": [
+        "database/*"
+      ],
+      "@routes/*": [
+        "routes/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ],
+      "@schedules/*": [
+        "schedules/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@/*": [
+        "*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
