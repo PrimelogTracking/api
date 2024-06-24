@@ -3,7 +3,6 @@ import { AppDataSource } from "../data-source";
 import { CodeHistory } from "../db/entities/codeHistory";
 
 import { messages, Messages } from "../config/messages";
-import generateRandomTime from "../utils/generateRandomTime"
 
 import CodeService from "./code.service";
 
@@ -49,14 +48,11 @@ export class HistoryService {
       }
 
       if (message) {
-        const createdAt = generateRandomTime();
-        
         const history = this.historyRepository.create({
           code: code,
           title: message.title,
           description: message.description,
-          step: nextStep,
-          createdAt: createdAt
+          step: nextStep
         });
 
         await this.historyRepository.save(history);
