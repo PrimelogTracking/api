@@ -1,4 +1,4 @@
-function generateRandomTime(): Date {
+export const generateRandomTime = (): Date => {
   const startHour = 9;
   const endHour = 18;
   const randomHour = startHour + Math.floor(Math.random() * (endHour - startHour));
@@ -9,3 +9,5 @@ function generateRandomTime(): Date {
 
   return currentDate;
 }
+
+export default generateRandomTime;
